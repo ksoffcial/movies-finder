@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie finder | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- Nav bar -->
+
+    <header class="sticky top-0 z-50">
+        <div class="flex justify-between bg-[#082736] text-white px-10 py-3  items-center overflow-hidden sticky top-0">
+            <div>
+                <h2 class="text-3xl font-semibold">Movie <span class="text-red-400">Finder</span></h2>
+            </div>
+            <div>
+                <div class="gap-x-10 font-medium items-center  hidden lg:block lg:flex   ahover">
+                    <div class="flex items-center gap-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="flex gap-x-1 items-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z" />
+                        </svg>
+                        <a href="tvshow.html">Tv Show</a>
+                    </div>
+                    <div class="flex items-center gap-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0 1 18 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0 1 18 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 0 1 6 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5" />
+                        </svg>
+                        <a href="movies.html">Movies</a>
+                    </div>
+                    <a href="join.html"
+                        class="text-[#66ffff] border border-[#66ffff] px-4 py-2 rounded-lg text-[1.2rem]">Join now</a>
+                </div>
+            </div>
+
+            <div>
+                <form action="" class=" flex gap-x-2">
+                    <input type="search" name="" id="" placeholder="Search your favourite "
+                        class="px-4 py-2 border border-white rounded-lg ">
+                    <button class="bg-slate-200 text-black font-semibold px-4 rounded-lg py-2 hidden lg:block">Search
+                        here</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- main  -->
+
+    <div
+        class="bg-[url(https://images.unsplash.com/photo-1613280194169-6bb2f32a6bfa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fG5ldGZsaXh8ZW58MHx8MHx8fDA%3D)] bg-no-repeat bg-center bg-cover h-[87.5vh] flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-y-10">
+            <div class="flex flex-col gap-y-6 text-center text-white">
+                <h1 class="text-6xl font-bold">Welcome to <span class="text-red-500">Movies</span> Finder</h1>
+                <p class="lg:w-[50%] m-auto text-2xl font-semibold">Join <span class="text-red-500">Movies Finder</span>
+                    to watch and listen the latest Movies,TvShow,Podcast,Comedy
+                    videos, StandUp Comedy and many more.... </p>
+            </div>
+            <div class="text-xl font-semibold flex  gap-x-6">
+                <a href="join.html" class="bg-blue-700 text-white px-12 py-3 rounded-lg border border-yellow-300">Sign
+                    In</a>
+                <a href="signup.html"
+                    class="bg-green-700 text-white px-12 py-3 rounded-lg border border-yellow-300">Sign
+                    Up</a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Trending now -->
+
+    <div class="lg:w-[90%] ml-auto mr-auto mt-14">
+        <h2 class="text-5xl font-bold text-red-500 text-center">Tranding Now</h2>
+        <p class="text-2xl text-center mt-2 font-semibold">Unlimited Tranding movies and TVshow</p>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 mt-8 gap-6 cursor-pointer">
+            <a href="movie.html">
+                <div class="overflow-hidden bg-[#252525] rounded-lg">
+                    <img src="https://image.tmdb.org/t/p/w342/sGjqP4lKCcvTgappoIb0N0ojR7T.jpg" alt=""
+                        class="rounded-lg scale ">
+                    <p class="p-4">Panchayat (Season 4) [Hindi] 4K 1080p 720p & 480p HD | ALL Episodes </p>
+                </div>
+            </a>
+            <div class="overflow-hidden bg-[#252525] rounded-lg">
+                <img src="https://catimages.org/images/2025/03/08/Dragon-2025-Hindi-Dubbed-Trailer-HDHub4u.Tv.jpg"
+                    alt="" class="rounded-lg scale">
+                <p class="p-4">Dragon (2025) [Hindi] – Comedy/Drama | [RELEASED]on movies finder</p>
+            </div>
+            <div class="overflow-hidden bg-[#252525] rounded-lg">
+                <img src="https://catimages.org/images/2024/12/22/CID-2024-S02-HDHub4u.Tv.jpg" alt=""
+                    class="rounded-lg scale">
+                <p class="p-4">CiD (Season 2) [Hindi DD2.0] 1080p 720p & 480p HD | [EP-56 Added]</p>
+            </div>
+            <div class="overflow-hidden bg-[#252525] rounded-lg">
+                <img src="https://image.tmdb.org/t/p/w342/adYjCJGSNiL7CIaDW3g0Bcg7r2Z.jpg" alt=""
+                    class="rounded-lg scale">
+                <p class="p-4">Sitaare Zameen Par (2025) [Hindi] 1080p 720p & 480p | Full Movie</p>
+            </div>
+        </div>
+        <div class="mt-6">
+            <p class=" text-center text-3xl text-blue-500 font-semibold cursor-pointer ">Explore More...</p>
+            <p class="h-0.5 w-60 mt-2 bg-red-500 ml-auto mr-auto"> </p>
+        </div>
+    </div>
+
+
+    <!-- New Movies  -->
+
+    <div class="lg:w-[90%] ml-auto mr-auto mt-14 mb-10">
+        <h2 class="text-5xl font-bold text-red-500 text-center"> New Tranding Movies</h2>
+        <p class="text-2xl text-center mt-2 font-semibold">Unlimited New Tranding movies</p>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 mt-8 gap-6 cursor-pointer">
+            <div class="overflow-hidden bg-[#252525] rounded-lg">
+                <img src="https://image.tmdb.org/t/p/w342/srj9rYrjefyWqkLc6l2xjTGeBGO.jpg" alt=""
+                    class="rounded-lg scale ">
+                <p class="p-4">Warfare (2025) [Hindi & English] 4K 1080p 720p & 480p Dual Audio| Full Movie</p>
+            </div>
+            <div class="overflow-hidden bg-[#252525] rounded-lg">
+                <img src="https://image.tmdb.org/t/p/w342/89UCGQBWWOUQHZlpcMDSp84im0r.jpg" alt=""
+                    class="rounded-lg scale">
+                <p class="p-4">Kuberaa (2025) [Hindi & Telugu] 1080p 720p & 480p Dual Audio | Full Movie</p>
+            </div>
+            <div class="overflow-hidden bg-[#252525] rounded-lg">
+                <img src="https://catimages.org/images/2025/06/21/Odela-Railway-Station-2022-HDHub4u.Ms.jpg" alt=""
+                    class="rounded-lg scale">
+                <p class="p-4">Odela Railway Station WEB-DL [Hindi & Telugu] 4K 1080p 720p & 480p Dual Audio | Full
+                    Movie</p>
+            </div>
+            <div class="overflow-hidden bg-[#252525] rounded-lg">
+                <img src="https://catimages.org/images/2024/08/31/Aho-Vikramaarka-2024-HDHub4u.Tv.jpg" alt=""
+                    class="rounded-lg scale">
+                <p class="p-4">Aho Vikramaarka (2024) Hindi 1080p 720p & 480p | Full Movie</p>
+            </div>
+        </div>
+        <div class="mt-6">
+            <p class=" text-center text-3xl text-blue-500 font-semibold cursor-pointer ">Explore More...</p>
+            <p class="h-0.5 w-60 mt-2 bg-red-500 ml-auto mr-auto"> </p>
+        </div>
+    </div>
+
+
+
+    <!-- choose us -->
+
+    <div class="lg:w-[85%] ml-auto mr-auto">
+        <h2 class="bg-gradient-to-r from-[#EA8D8D] to-[#A890FE] text-transparent bg-clip-text text-4xl font-bold">More reason to choose us</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 mt-4 gap-4">
+            <div class="bg-white/20 p-4 rounded-lg">
+                <h2 class="text-2xl font-semibold bg-gradient-to-r from-[#4E65FF] to-[#92EFFD] text-transparent bg-clip-text">Enjoy on your TV</h2>
+                <p class="text-white/80 font-medium mt-4">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more</p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+                <h2 class="text-2xl font-semibold bg-gradient-to-r from-[#11998E] to-[#38EF7D] text-transparent bg-clip-text">Download your shows</h2>
+                <p class="text-white/80 font-medium mt-4">Save your favourites easily and always have something to watch.</p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+                <h2 class="text-2xl font-semibold bg-gradient-to-r from-[#4E65FF] to-[#92EFFD] text-transparent bg-clip-text">Watch everywhere</h2>
+                <p class="text-white/80 font-medium mt-4">Watch everywhere Stream unlimited movies and TV shows on your phone, tablet, laptop and TV </p>
+            </div>
+            <div class="bg-white/20 p-4 rounded-lg">
+                <h2 class="text-2xl font-semibold bg-gradient-to-r from-[#662D8C] to-[#ED1E79] text-transparent bg-clip-text">Create profiles for kids</h2>
+                <p class="text-white/80 font-medium mt-4"> Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
